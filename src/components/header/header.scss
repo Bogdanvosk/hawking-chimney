@@ -1,1 +1,161 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  &__burger {
+    display: flex;
+
+    cursor: pointer;
+    @include circle;
+    border-color: $turquoise-color;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.4375rem;
+
+    span {
+      width: 22px;
+      height: 2px;
+      background-color: $turquoise-color;
+    }
+
+    @media (max-width: 1200px) {
+      order: 1;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 2.1875rem;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__list-item {
+    line-height: 23px;
+    font-weight: 700;
+    color: $turquoise-color;
+    text-transform: uppercase;
+    transition: $primary-transition;
+
+    &:hover {
+      color: darken($turquoise-color, 20%);
+    }
+  }
+
+  &__phone {
+    @media (max-width: 1510px) {
+      display: none;
+    }
+  }
+
+  &__phone-number {
+    color: $turquoise-color;
+
+    span {
+      color: $black-color;
+      font-weight: 700;
+    }
+  }
+
+  &__recall {
+    margin-top: -0.3125rem;
+
+    @media (max-width: 1680px) {
+      display: none;
+    }
+  }
+
+  &__recall-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    color: $red-color;
+    border-bottom: 1px dashed $red-color;
+    padding-bottom: 0.3125rem;
+    transition: $primary-transition;
+
+    &:hover {
+      color: darken($red-color, 20%);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    @media (max-width: 1510px) {
+      display: none;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    @media (max-width: 1200px) {
+      margin-left: auto;
+      margin-right: 1rem;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    cursor: pointer;
+    @include circle;
+    border-color: $grey-color;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:first-child {
+      @media (max-width: 540px) {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      @media (max-width: 480px) {
+        display: none;
+      }
+    }
+
+    span {
+      height: 18px;
+    }
+
+    &:hover {
+      border-color: darken($grey-color, 20%);
+      transform: rotate(720deg);
+    }
+
+    .counter {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 50%;
+      background-color: $highlight-color;
+      color: #fff;
+      width: 21px;
+      height: 21px;
+      font-weight: 700;
+      font-size: 0.6875rem;
+      line-height: 0.8125rem;
+      font-family: 'Lato', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

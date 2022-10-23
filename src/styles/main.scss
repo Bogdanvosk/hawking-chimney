@@ -1,9 +1,8 @@
-@import 'base/fonts';
-@import 'base/globals';
-
-@import 'helpers/functions';
-@import 'helpers/mixins';
-@import 'helpers/variables';
-
 @import 'libs/libs';
+@import 'helpers/variables';
+@import 'helpers/mixins';
+
+@import 'base/globals';
+@import 'base/iconsfont';
+
 @import '../components/components';

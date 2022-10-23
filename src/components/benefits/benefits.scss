@@ -1,0 +1,87 @@
+.benefits {
+  margin-top: 5.5rem;
+  &__title {
+    @include title;
+    position: relative;
+
+    &::before {
+      @include title-decoration;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 1.875rem;
+      line-height: 2.3125rem;
+    }
+
+    @media (max-width: 440px) {
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+    }
+  }
+
+  &__info {
+    margin-top: 3.125rem;
+    font-size: 1rem;
+    line-height: 1.875rem;
+
+    @media (max-width: 1024px) {
+      margin-top: 2.25rem;
+    }
+
+    @media (max-width: 440px) {
+      margin-top: 1.625rem;
+    }
+  }
+
+  &__items {
+    margin-top: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    @media (max-width: 1270px) {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+
+    margin-top: 2rem;
+
+    @media (max-width: 1024px) {
+      font-size: 1.125rem;
+    }
+
+    @media (max-width: 440px) {
+      margin-top: 1.125rem;
+    }
+  }
+
+  &__item-text {
+    margin-top: 0.625rem;
+    max-width: 386px;
+    font-size: 1rem;
+    line-height: 1.875rem;
+
+    span {
+      color: $highlight-color;
+      font-weight: 600;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+      max-width: 353px;
+    }
+
+    @media (max-width: 440px) {
+      margin-top: 0.125rem;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.container
+	.consultation
+		h2.consultation__title необходима консультация?
+		p.consultation__subtitle оставьте заявку или свяжитесь с нами в социальных сетях
+		ul.consultation__socials
+			li.consultation__socials-item
+				a(href="https://vk.com", target="_blank")
+					span.icon-vk
+			li.consultation__socials-item
+				a(href="https://web.telegram.org", target="_blank")
+					span.icon-tg
+			li.consultation__socials-item
+				a(href="https://instagram.com", target="_blank")
+					span.icon-instagram
+			li.consultation__socials-item
+				a(href="https://web.whatsapp.com", target="_blank")
+					span.icon-whatsapp
+		span.divider
+		form.consultation__form
+			h4.consultation__form-title Для <span>консультации</span> заполните форму!
+			p.consultation__form-subtitle С Вами свяжутся в ближайшее время
+			.consultation__form-controls 
+				input.consultation__form-input(type="text" placeholder="Ваше имя")
+				input.consultation__form-input(type="text" placeholder="Ваш телефон")
+				button.consultation__form-button Отправить
