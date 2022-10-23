@@ -11,7 +11,7 @@ const { paths } = require('../config');
 
 const server = () => {
   browserSync.init({
-    server: 'dist/',
+    server: 'public/',
   })
 
   watch(paths.styles.watch, styles);

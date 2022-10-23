@@ -12,7 +12,7 @@
     "prettier:fix": "prettier --write src/**/*{.css,.scss}",
     "eslint": "eslint src/**/*.js",
     "eslint:fix": "eslint src/**/*.js --fix",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d public"
   },
   "author": "arloktev",
   "license": "ISC",

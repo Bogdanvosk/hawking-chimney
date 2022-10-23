@@ -30,7 +30,7 @@ const styles = () => {
       .pipe(postcss(isProduction ? plugins : commonPlugins))
       .pipe(gulpIf(!isProduction, sourcemaps.write('.')))
       .pipe(plumber.stop())
-      .pipe(dest(paths.styles.dist))
+      .pipe(dest(paths.styles.public))
       .pipe(browserSync.stream())
   )
 }

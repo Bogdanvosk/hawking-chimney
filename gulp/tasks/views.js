@@ -11,7 +11,7 @@ const views = () => {
     .pipe(pug({
       pretty: true
     }))
-    .pipe(dest(paths.views.dist))
+    .pipe(dest(paths.views.public))
     .pipe(browserSync.stream())
 }
 

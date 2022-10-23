@@ -12,7 +12,7 @@ const scripts = () => {
       sourcemap: !isProduction,
       minify: isProduction
     }))
-    .pipe(dest(paths.scripts.dist))
+    .pipe(dest(paths.scripts.public))
     .pipe(browserSync.stream())
 }
 

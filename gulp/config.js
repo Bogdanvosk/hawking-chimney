@@ -3,7 +3,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const paths = {
   views: {
     src: './src/views/pages/*.pug',
-    dist: './dist/',
+    public: './public/',
     watch: [
       './src/views/**/*.pug',
       './src/components/**/*.pug',
@@ -11,7 +11,7 @@ const paths = {
   },
   styles: {
     src: './src/styles/main.{scss,sass}',
-    dist: './dist/assets/styles/',
+    public: './public/assets/styles/',
     watch: [
       './src/components/**/*.{scss,sass}',
       './src/styles/**/*.{scss,sass}'
@@ -19,7 +19,7 @@ const paths = {
   },
   scripts: {
     src: './src/js/index.js',
-    dist: './dist/assets/js/',
+    public: './public/assets/js/',
     watch: [
       './src/js/index.js',
       './src/components/**/*.js'
@@ -29,17 +29,17 @@ const paths = {
     src: [
       './src/assets/images/**/*.{jpg,jpeg,png,gif,svg}',
     ],
-    dist: './dist/assets/images/',
+    public: './public/assets/images/',
     watch: './src/assets/images/**/*.{jpg,jpeg,png,gif,svg}'
   },
   fonts: {
     src: './src/assets/fonts/**/*.{ttf,woff,woff2}',
-    dist: './dist/assets/fonts/',
+    public: './public/assets/fonts/',
     watch: './src/assets/fonts/**/*.{ttf,woff,woff2}'
   },
   sprites: {
     src: './src/sprite/*.svg',
-    dist: './dist/assets/images/',
+    public: './public/assets/images/',
     watch: './src/sprite/*.svg'
   }
 };

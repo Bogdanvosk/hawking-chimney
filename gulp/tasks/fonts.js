@@ -6,7 +6,7 @@ const { paths } = require('../config');
 const fonts = () => {
   return (
     src(paths.fonts.src)
-      .pipe(dest(paths.fonts.dist))
+      .pipe(dest(paths.fonts.public))
       .pipe(browserSync.stream())
   )
 }

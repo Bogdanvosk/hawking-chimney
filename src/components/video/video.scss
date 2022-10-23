@@ -1,0 +1,64 @@
+.video {
+  background-image: url('../../assets/images/video-bg.svg');
+  background-repeat: no-repeat;
+  background-position: top 15.625rem center;
+  background-size: contain;
+
+  @media (max-width: 1024px) {
+    background-image: none;
+  }
+  &__title {
+    @include title;
+    position: relative;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.0625rem;
+
+    &::before {
+      @include title-decoration;
+    }
+
+    @media (max-width: 900px) {
+      font-weight: 600;
+      font-size: 1.875rem;
+      line-height: 2.3125rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__info {
+    margin-top: 4.125rem;
+    font-size: 1rem;
+    line-height: 1.875rem;
+
+    @media (max-width: 900px) {
+      margin-top: 2.125rem;
+      font-size: 1rem;
+      line-height: 1.875rem;
+    }
+
+    @media (max-width: 500px) {
+      margin-top: 1.75rem;
+      font-size: .875rem;
+      line-height: 1.625rem;
+    }
+  }
+
+  &__container {
+    text-align: center;
+    margin-top: 6.25rem;
+
+    @media (max-width: 1024px) {
+      margin-top: 2.125rem;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 771px;
+      height: 438px;
+    }
+  }
+}

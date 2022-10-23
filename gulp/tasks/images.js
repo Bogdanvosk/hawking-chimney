@@ -9,7 +9,7 @@ const images = () => {
   return (
     src(paths.images.src)
       .pipe(gulpIf(isProduction, imagemin()))
-      .pipe(dest(paths.images.dist))
+      .pipe(dest(paths.images.public))
       .pipe(browserSync.stream())
   )
 }
