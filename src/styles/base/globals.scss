@@ -2,6 +2,9 @@ body {
   font-family: $primary-font;
   font-size: $primary-font-size;
   color: $black-color;
+}
+
+main {
   padding: 1.625rem 4rem 0;
 
   @media (max-width: 768px) {

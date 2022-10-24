@@ -28,6 +28,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-location {
+  &:before {
+    content: $icon-location; 
+  }
+}
+.icon-time {
+  &:before {
+    content: $icon-time; 
+  }
+}
+
 .icon-arrow-right {
   &:before {
     content: $icon-arrow-right;

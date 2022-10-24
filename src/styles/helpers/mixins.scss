@@ -5,11 +5,11 @@
 }
 
 @mixin title-decoration {
+  content: '';
   width: 74px;
   height: 5px;
   background-color: $highlight-color;
   position: absolute;
-  content: '';
   top: -0.6875rem;
   left: 0;
 }
