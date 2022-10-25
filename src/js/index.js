@@ -1,5 +1,3 @@
 import '../components';
 
-
-
-// console.log("%cЮня молодец", "font-size: 60px; font-weight: 700; font-style: italic; padding: .5em; background: hotpink; color: white; text-shadow: -2px 2px 0px violet, -5px 5px 15px red; text-align: center;")
+console.log("%cпрекрасно выглядишь, солнышко", "font-size: 70px; text-transform: uppercase; font-weight: 700; padding: 0.5em; background: linear-gradient(black 0%, red 100%); color: yellow; text-shadow: -4px 4px 0px red, -8px 8px 0px black")
