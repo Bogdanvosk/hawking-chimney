@@ -16,10 +16,13 @@
 				a(href="https://web.whatsapp.com", target="_blank")
 					span.icon-whatsapp
 		span.divider
+		.consultation__alert.consultation__alert--success Заявка отправлена
+		.consultation__alert.consultation__alert--warning Введите имя и номер телефона
 		form.consultation__form
 			h4.consultation__form-title Для <span>консультации</span> заполните форму!
 			p.consultation__form-subtitle С Вами свяжутся в ближайшее время
 			.consultation__form-controls 
-				input.consultation__form-input(type="text" placeholder="Ваше имя")
-				input.consultation__form-input(type="text" placeholder="Ваш телефон")
-				button.consultation__form-button Отправить
+				input.consultation__form-input.consultation__form-input--name(type="text" placeholder="Ваше имя")
+				input.consultation__form-input.consultation__form-input--phone(type="text" placeholder="Ваш телефон")
+				button.consultation__form-button(type="submit") Отправить
+
